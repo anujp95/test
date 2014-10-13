@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	<title>Test</title>
+
+</head>
+ <body>
+	<button id="button1">Do it</button>
+	<button id="clear">Clear</button>
+	<div id="results"></div>
+	
+	
+	
+		<script src="js/zepto.min.js"></script>
+		<script src="js/button.js"></script>
+	<script> 
+	$('#button1').click(function() {
+		button.DoIt($('#results'));
+	});
+	$('#clear').click(function() {
+		$('#results').html(' ');
+	});
+	</script>
+	
+ </body>
+</html>
