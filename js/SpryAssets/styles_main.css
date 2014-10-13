@@ -1,0 +1,176 @@
+/* 
+
+STYLE SHEET FOR [www.sigmachapter.org]
+Created by Daniel Palatnik]
+[URL OF AUTHOR]
+
+ToC
+
+	1. defaults
+	2. structure
+	3. links and navigation
+	4. fonts
+	5. images
+
+Notes
+
+*/
+
+
+
+/* --------- 1. defaults  --------- */
+
+* {
+		margin: 200;
+		padding: 0;
+		}
+
+body {
+	font: 62.5%/1.5  Verdana, Times New Roman, Times, serif;
+	background: #878787 url(background-drop-shadow.gif) 50% 0 repeat-y;
+		}
+		
+/*  --------- 2. structure  --------- */
+
+#wrapper {
+	width: 900px;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	background: #F9F9F9 url(background-gradient.gif) repeat-x;
+	background-color:#F9F9F9;
+	margin: 0 auto;
+	border-color: #F2F2F2;
+		}
+		
+#masthead {
+
+		}
+		
+#logo {
+		}
+		
+#MenuBarHorizontal {
+	width: 900px;
+	margin: 0;
+	padding: 0;
+		}
+
+#content {
+		}
+		
+#divZero  {
+	float:left;
+	width:900px;
+}
+
+
+#divOne {
+	float:left;
+	width:360px;
+	padding-bottom:1.5em;
+	padding:0px 5px 5px 0px;
+        }
+		
+#divTwo {
+	float:left;
+	width:500px;
+	padding-bottom:1.5em;
+	clear:right;
+	padding:0px 15px 5px 0px;
+        }
+		
+#divThree {
+	width:880px;
+	padding-bottom:1.5em;
+	padding:15px 10px 5px 0px;
+        }
+
+#divFour {
+	width:600px;
+	padding-bottom:1.5em;
+	padding:15px 10px 5px 10px;
+        }
+
+#footer {
+		}
+
+	/* float-clearing rules */
+.separator {
+		clear: both;
+		}
+
+.separatorInvisible {
+		clear: both;
+		height: 1px;
+		}
+
+.clearFix:after {
+    	content: "."; 
+    	display: block; 
+    	height: 0; 
+    	clear: both; 
+    	visibility: hidden;
+		}		
+		
+/* ---------- 3. links and navigation ---------- */
+
+a {
+		}
+		
+a:hover {
+		}
+
+#navigation {
+		}
+
+#navigation a {
+		}
+
+#navigation ul {
+		}
+
+#navigation li {
+		}
+		
+/* ---------- 4. fonts ---------- */
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		font-size: 62.5%;
+		margin:15px;
+		}
+
+h1, h2, h3, h4, p, ul {
+		}
+
+h1 {
+		}
+
+h2 {
+margin-left:20px;
+}
+
+h3 {
+		}
+		
+h4 {
+		}
+
+p {
+	margin-bottom: 1.5em;
+	margin-left:15px;
+	margin-right:15px;
+		}
+
+ul {
+	margin-left:15px;
+	margin-right:15px;
+}
+
+/* ---------- 5. images ---------- */
+
+a img {
+		}
