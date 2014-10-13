@@ -1,49 +1,109 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="msapplication-tap-highlight" content="no">
-  <meta charset="UTF-8">
-  <title>Testing</title>
-  <link rel="stylesheet" href="dist/chui.android-3.7.0.min.css">
-  <script src="src/chocolatechipjs/chocolatechip-3.7.0.min.js"></script>
+ <meta name="msapplication-tap-highlight" content="no">
+    <link  href="dist/chui.android-3.7.0.min.css">
+  <script src="dist/chui-3.7.0.js"></script>
   <script src="dist/chui-3.7.0.min.js"></script>
+
+    <style>
+    html, body {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      background-color: #efeff4;
+      font: normal 10pt/13pt HelveticaNeue, SegoeWP, SegoeUI, Roboto, Sans-serif;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -webkit-user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    article {
+      padding: 40px 0;
+    }
+    nav {
+      height: 50px;
+      box-sizing: border-box;
+      text-align: center;
+      transition: opacity .5s ease-in;
+      padding: 0 15px;
+      background-color: #f7f7f7;
+      border-bottom: solid 1px #a7a7aa;
+      padding: 1px 0;
+    }
+    nav > h1 {
+      text-align: center;
+      font: normal 14pt/17pt HelveticaNeue, SegoeWP, SegoeUI, Roboto, Sans-serif;
+    }
+    ul {
+      list-style: none;
+      margin: 0 0 10px 0;
+      padding: 0;
+      border-top: solid 1px #c8c8c8;
+      background-color: #fff;
+      margin-bottom: 40px;
+    }  
+    ul > li {
+      padding: 0 !important;
+      margin: 0;
+    }
+    ul > li > a {
+      background-color: #fff;
+      font-size: 12pt;
+      text-decoration: none;
+      display: block;
+      color: #000;
+      padding: 15px 15px;
+      border-bottom: solid 1px #c8c8c8;
+    }
+    li > a:hover {
+      background-color: #d9d9d9;
+    }
+    h2 {
+      font: normal 14pt/17pt HelveticaNeue, SegoeWP, SegoeUI, Roboto, Sans-serif;
+      color: #4d4d4d;
+      margin: 0 0 20px 15px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  </style>
+  
+    <title>Testing</title>
+
 </head>
 
 <body>
-  <nav class="current">
+  <nav class='current'>
     <h1>Fruits</h1>
   </nav>
-  <article class="current" id="fruits">
+  <article class='current' id='fruits'>
     <section>
-      <ul class="list">
-        <li class="nav" data-goto="apples">
+      <ul class='list'>
+        <li class='nav' data-goto="apples">
           <h3>Apples</h3>
         </li>
-        <li class="nav" data-goto="oranges">
+        <li class='nav' data-goto="oranges">
           <h3>Oranges</h3>
         </li>
-        <li class="nav" data-goto="bananas">
+        <li class='nav' data-goto="bananas">
           <h3>Bananas</h3>
         </li>
-        <li class="nav" data-goto="mangos">
+        <li class='nav' data-goto="mangos">
           <h3>Mangos</h3>
         </li>
-        <li class="nav" data-goto="avocados">
+        <li class='nav' data-goto="avocados">
           <h3>Avocados</h3>
         </li>
       </ul>
     </section>
   </article>
-  <nav class="next">
+  <nav class='next'>
     <a href="#" class="button back">Fruits</a>
     <h1>Apples</h1>
   </nav>
-  <article id="apples" class="next">
+  <article id='apples' class='next'>
     <section>
       <h2>Uses</h2>
-      <ul class="list">
+      <ul class='list'>
         <li>
           <h3>Juice</h3>
         </li>
@@ -56,14 +116,14 @@
       </ul>
     </section>
   </article>
-  <nav class="next">
-    <a href="#" class="button back">Fruits</a>
+  <nav class='next'>
+    <a href='#' class='button back'>Fruits</a>
     <h1>Oranges</h1>
   </nav>
-  <article id="oranges" class="next">
+  <article id='oranges' class='next'>
     <section>
       <h2>Uses</h2>
-      <ul class="list">
+      <ul class='list'>
         <li>
           <h3>Juice</h3>
         </li>
@@ -76,14 +136,14 @@
       </ul>
     </section>
   </article>
-  <nav class="next">
-    <a href="#" class="button back">Fruits</a>
+  <nav class='next'>
+    <a href='#' class='button back'>Fruits</a>
     <h1>Bananas</h1>
   </nav>
-  <article id="bananas" class="next">
+  <article id='bananas' class='next'>
     <section>
       <h2>Uses</h2>
-      <ul class="list">
+      <ul class='list'>
         <li>
           <h3>Smoothies</h3>
         </li>
@@ -96,14 +156,14 @@
       </ul>
     </section>
   </article>
-  <nav class="next">
-    <a href="#" class="button back">Fruits</a>
+  <nav class='next'>
+    <a href='#' class='button back'>Fruits</a>
     <h1>Mangos</h1>
   </nav>
-  <article id="mangos" class="next">
+  <article id='mangos' class='next'>
     <section>
       <h2>Uses</h2>
-      <ul class="list">
+      <ul class='list'>
         <li>
           <h3>Smoothies</h3>
         </li>
@@ -116,14 +176,14 @@
       </ul>
     </section>
   </article>
-  <nav class="next">
-    <a href="#" class="button back">Fruits</a>
+  <nav class='next'>
+    <a href='#' class='button back'>Fruits</a>
     <h1>Avocados</h1>
   </nav>
-  <article id="avocados" class="next">
+  <article id='avocados' class='next'>
     <section>
       <h2>Uses</h2>
-      <ul class="list">
+      <ul class='list'>
         <li>
           <h3>Smoothies</h3>
         </li>
